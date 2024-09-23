@@ -2,7 +2,8 @@
 
 
 $(document).ready(function(){
-$("div > span").css("color", "red")
+$("div[target='_blank']").click(function(){
+    console.log("Target is blank");
+})
 
-$("div").css("font-size", "20px")
 });
