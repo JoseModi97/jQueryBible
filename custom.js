@@ -2,8 +2,12 @@
 
 
 $(document).ready(function(){
-$("div[target='_blank']").click(function(){
-    console.log("Target is blank");
-})
+$(":button").click(function(){
+    console.log("Button is clicked");
+});
+
+$(":input").click(function(){
+    console.log("input is clicked");
+});
 
 });
