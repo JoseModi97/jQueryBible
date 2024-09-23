@@ -2,7 +2,11 @@
 
 
 $(document).ready(function(){
-$("*").click(function(){
-    console.log("All element Selector");
-})
+$("div").click(function(){
+    console.log("Div is Clicked");
+
+    console.log($(this));
+
+    $(this).hide()
+});
 });
