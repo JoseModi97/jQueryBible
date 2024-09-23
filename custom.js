@@ -1,11 +1,12 @@
 "use strict"
 
-//Longhand Version
+
 $(document).ready(function(){
-console.log('I am Ready')
+$("div").click(function(){
+    console.log("Div is Clicked");
 });
 
-//Shorthand Version
-$(function(){
-
+$("p").click(function(){
+    console.log("Div is Clicked");
+});
 });
