@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-$("p.epicClass").click(function(){
-    console.log(" Element and Class Selector");
-});
+$("div > span").css("color", "red")
+
+$("div").css("font-size", "20px")
 });
