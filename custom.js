@@ -2,12 +2,8 @@
 
 
 $(document).ready(function(){
-$(":button").click(function(){
-    console.log("Button is clicked");
-});
+$("p:contains(i)").css("background-color", "yellow")
 
-$(":input").click(function(){
-    console.log("input is clicked");
-});
+$("p:contains(My)").css("background-color", "red")
 
 });
