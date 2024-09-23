@@ -2,11 +2,7 @@
 
 
 $(document).ready(function(){
-$("div").click(function(){
-    console.log("Div is Clicked");
-
-    console.log($(this));
-
-    $(this).hide()
+$("#HW").click(function(){
+    console.log("HW is Clicked");
 });
 });
