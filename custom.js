@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-$("#HW").click(function(){
-    console.log("HW is Clicked");
+$("#HW, .epicClass:first").click(function(){
+    console.log("Awesome click first element");
 });
 });
