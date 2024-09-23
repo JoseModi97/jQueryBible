@@ -2,7 +2,8 @@
 
 
 $(document).ready(function(){
-$("#HW, .epicClass:first").click(function(){
-    console.log("Awesome click first element");
-});
+$("tr:odd").css( "background-color", "red");
+
+$("tr:even").css( "background-color", "yellow");
+
 });
