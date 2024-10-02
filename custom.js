@@ -1,16 +1,15 @@
 "use strict";
 
 $(document).ready(function() {
-   $("#EpicButton").click(function(){
-var div = $("div")[0];
+ var func = function(){
+    console.log(this);
+ }
+ var object = 
+ {
+    food: "Pizza",
+ }
 
-   $.data(div, "epic", 
-    {
-        "name": "Frahan",
-        "age": 27
-    }
-   )
-   $("span:first").text($.data(div, "epic"). name)
-   $("span:last").text($.data(div, "epic"). age)
-   })
+ var proxyFunction  = $.proxy(func, object);
+
+ proxyFunction();
 });
