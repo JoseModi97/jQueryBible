@@ -2,13 +2,11 @@
 
 $(document).ready(function() {
  $("#EpicButton").click(function(){
-    $.getJSON("favourites.json", function(result){
-        console.log(result);
-
-        $.each(result, function(index, value){
-            console.log(`${index} - ${value}`)
-        })
-    })
+   $.get("favourites.php", function(data, status){
+    console.log(data);
+    $("div").html(data);
+    console.log(status);
+   })
  })
 
 
