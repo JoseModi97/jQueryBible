@@ -2,11 +2,13 @@
 
 $(document).ready(function() {
  $("#EpicButton").click(function(){
-   $.get("favourites.php", function(data, status){
+   $.post("favourites.php",{
+    "food" : "pizza",
+    "game": "Half-Life 3"
+   }   ,function(data, status){
     console.log(data);
-    $("div").html(data);
-    console.log(status);
    })
+
  })
 
 
